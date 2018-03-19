@@ -1,0 +1,1216 @@
+* {
+	margin: 0px;
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', Roboto, Arial, Sans-serif;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: #fff;
+}
+
+nav {
+	position: absolute;
+	width: 100%;
+	
+}
+
+.nav {
+  text-align: center;
+  height: 70px;
+  line-height: 30px;
+  
+}
+
+label {
+    display: block;
+    cursor: pointer;
+	font-size: 28px;
+	color: dimgray;
+	margin: 10px;
+  }
+
+.box {
+	background-color: tomato;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px;
+	color: #fff;
+		
+	}
+	
+.box:hover {
+	background-color: #fff;
+	color: tomato;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+	}
+  
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+	background-color: #fff;
+  }
+  
+  .menu a {
+	text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    padding: 20px;
+	  color: gray;
+    
+  }
+
+.menu a:hover {
+	color:tomato;
+}
+
+#toggle {
+	display: none;
+}
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+	
+header {
+	height: 100vh;
+	background-size: cover;
+	background-position: center; 
+}
+
+/* SNIPPET: https://www.cssscript.com/css-only-crossfading-background-slideshow/ */
+.crossfade > figure {
+	  animation: imageAnimation 30s linear infinite 0s;
+	  backface-visibility: hidden;
+	  background-size: cover;
+	  background-position: center bottom;
+	  color: transparent;
+	  height: 100%;
+	  left: 0px;
+	  opacity: 0;
+	  position: absolute;
+	  top: 0px;
+	  width: 100%;
+	  z-index: -1;
+
+	}
+
+.crossfade > figure:nth-child(1) { 
+	background-image: url(../images/fischer.jpg); 
+	}
+	 
+
+	.crossfade > figure:nth-child(2) {
+	  animation-delay: 6s;
+	  background-image: url('../images/agriculture.jpg');
+	}
+
+	 
+	.crossfade > figure:nth-child(3) {
+	  animation-delay: 12s;
+	  background-image: url('../images/bagan.jpg');
+	}
+
+.crossfade > figure:nth-child(4) {
+	  animation-delay: 18s;
+	  background-image: url('../images/fischer.jpg');
+	}
+
+	 
+	.crossfade > figure:nth-child(5) {
+	  animation-delay: 24s;
+	  background-image: url('../images/agriculture.jpg');
+	}
+
+@keyframes
+	imageAnimation {  0% {
+	 animation-timing-function: ease-in;
+	 opacity: 0%;
+
+	}
+	 8% {
+	 animation-timing-function: ease-out;
+	 opacity: 1;
+	}
+	 17% {
+	 opacity: 1
+	}
+	 25% {
+	 opacity: 0
+	}
+	 100% {
+	 opacity: 0
+
+	}
+	}
+
+/* SNIPPET SLUT */
+
+header, img {
+	text-align: center;
+	padding-top: 5px;
+	max-height: 68%;
+	margin: 0;
+	padding-left: 0;
+
+}
+	
+header h1 {
+	font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+	word-wrap: break-word;
+	padding-top: 30%;
+	margin: 0;
+	width: 100%;
+	text-shadow: 1px 4px 15px #bababa;
+	line-height: 80px;
+}
+
+header h2 {
+	font-family: 'Bitter', serif;
+    line-height: 45px;
+    font-size: 25px;
+    color: #fff;
+	word-wrap: break-word;
+	margin: 0;
+	width: 100%;
+	text-shadow: 1px 4px 15px #bababa;
+	
+}
+
+#cv a {
+	line-height: 25px;
+	background-color: tomato;
+	padding: 2px 20px;
+	display: inline-block;
+	border-radius: 20px;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-left: 0;
+	box-shadow: 1px 4px 20px #bababa;
+}
+
+#cv a:hover {
+	background-color: #fff;
+	color: tomato;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+	
+}
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.sidebar {
+    flex: 100%;
+    padding: 20px;
+	background-color: #eee;
+}
+
+.sidebar h2 {
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 18px;
+	padding-bottom: 15px;
+}
+
+.sidebar p {
+	color: tomato;
+	font-size: 14px;
+	line-height: 19px;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid gray;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: #000;
+}
+
+.content h1 {
+	font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 28px;
+	padding-bottom: 5px;
+}
+	
+
+.content h2 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 16px;
+	padding-bottom: 5px;
+	color: dimgray;
+}
+
+.content h4 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 14px;
+	font-weight: lighter;
+	padding-bottom: 15px;
+}
+
+
+.content li {
+	font-size: 14px;
+	padding-bottom: 5px;
+	color: dimgray;
+}
+
+.content p {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 19px;
+	color: dimgray;
+	margin-right: 5%;
+}
+
+/* Main column content */
+.content {
+    flex: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.content img {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+}
+
+.content2 {
+    flex: 100%;
+    background-color: tomato;
+    padding: 20px 20px 20px 20px;
+}
+
+.content2 img {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+}
+
+.content2 h1 {
+	font-family: 'Bitter', serif;
+	color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+	padding-bottom: 5px;
+}
+
+.content2 h2 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 16px;
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+.content2 h4 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 14px;
+	font-weight: lighter;
+	padding-bottom: 10px;
+	color: #fff;
+}
+
+.content2 p {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 19px;
+	color: #fff;
+	margin-right: 5%;
+}
+
+.content2 a {
+	text-decoration:underline #fff;
+}
+	
+.content2 li {
+	font-size: 14px;
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+.content3 {
+	flex: 100%;
+    padding: 20px 20px 20px 20px;
+}
+	
+.content3 h1 {
+	font-family: 'Bitter', serif;
+	color: dimgray;
+    font-weight: 700;
+    font-size: 25px;
+	padding-bottom: 5px;
+}
+
+.content3 h2 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 16px;
+	padding-bottom: 5px;
+	color: dimgray;
+}
+
+.content3 h4 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 14px;
+	font-weight: lighter;
+	padding-bottom: 15px;
+	color: dimgray;
+}
+
+.content3 p {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 19px;
+	color: dimgray;
+	margin-right: 5%;
+}
+
+.content3 img {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+}
+	
+.content3 a {
+	line-height: 25px;
+	background-color: tomato;
+	padding: 2px 20px;
+	display: inline-block;
+	border-radius: 20px;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	box-shadow: 1px 4px 20px #bababa;
+	width: 100%;
+	text-align: center;
+}
+.content3 a:hover {
+	background-color: #fff;
+	color: tomato;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.sidebar img {
+	width: 100%;
+    padding: 0px 0px 6px 0px;
+	
+}
+	
+footer {
+	flex: 100%;
+	background-color: dimgray;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+footer > div {
+	width: 100%;
+}
+
+footer > div h3 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	font-weight: lighter;
+}
+
+footer > div p {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	font-weight: lighter;
+
+}
+
+
+
+
+@media (min-width:768px) and (max-width:1024px) {
+
+nav {
+	
+	
+}
+
+.nav {
+  text-align: center;
+  height: 70px;
+  line-height: 30px;
+  
+}
+
+label {
+    display: block;
+    cursor: pointer;
+	font-size: 28px;
+	color: dimgray;
+	margin: 10px;
+  }
+	
+.box {
+	background-color: tomato;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px;
+	color: #fff;
+		
+	}
+	
+.box:hover {
+	background-color: #fff;
+	color: tomato;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+	}
+  
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+	background-color: #fff;
+  }
+  
+  .menu a {
+	text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    padding: 20px;
+	  color: gray;
+    
+  }
+
+.menu a:hover {
+	color:tomato;
+}
+
+#toggle {
+	display: none;
+}
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+	
+header {
+	height: 100vh;
+	background-size: cover;
+	background-position: center; 
+}
+
+/* SNIPPET: https://www.cssscript.com/css-only-crossfading-background-slideshow/ */
+.crossfade > figure {
+	  animation: imageAnimation 15s linear infinite 0s;
+	  backface-visibility: hidden;
+	  background-size: cover;
+	  background-position: center bottom;
+	  color: transparent;
+	  height: 100%;
+	  left: 0px;
+	  opacity: 0;
+	  position: absolute;
+	  top: 0px;
+	  width: 100%;
+	  z-index: -1;
+
+	}
+
+.crossfade > figure:nth-child(1) { 
+	background-image: url(../images/fischer.jpg); 
+	}
+	 
+
+	.crossfade > figure:nth-child(2) {
+	  animation-delay: 6s;
+	  background-image: url('../images/agriculture.jpg');
+	}
+
+	 
+	.crossfade > figure:nth-child(3) {
+	  animation-delay: 12s;
+	  background-image: url('../images/bagan.jpg');
+	}
+
+.crossfade > figure:nth-child(4) {
+	  animation-delay: 18s;
+	  background-image: url('../images/fischer.jpg');
+	}
+
+	 
+	.crossfade > figure:nth-child(5) {
+	  animation-delay: 24s;
+	  background-image: url('../images/agriculture.jpg');
+	}
+
+@keyframes
+	imageAnimation {  0% {
+	 animation-timing-function: ease-in;
+	 opacity: 0;
+
+	}
+	 8% {
+	 animation-timing-function: ease-out;
+	 opacity: 1;
+	}
+	 17% {
+	 opacity: 1
+	}
+	 25% {
+	 opacity: 0
+	}
+	 100% {
+	 opacity: 0
+
+	}
+	}
+
+/* SNIPPET SLUT */
+
+header, img {
+	text-align: center;
+	padding-top: 5px;
+	max-height: 68%;
+	margin: 0;
+	padding-left: 0;
+
+}
+	
+header h1 {
+	font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: #fff;
+	word-wrap: break-word;
+	padding-top: 20%;
+	margin: 0;
+	width: 100%;
+	text-shadow: 1px 4px 15px #bababa;
+	line-height: 100px;
+}
+
+header h2 {
+	font-family: 'Bitter', serif;
+    line-height: 65px;
+    font-size: 45px;
+    color: #fff;
+	word-wrap: break-word;
+	margin: 0;
+	width: 100%;
+	text-shadow: 1px 4px 15px #bababa;
+	
+}
+
+#cv a {
+	line-height: 25px;
+	background-color: tomato;
+	padding: 2px 20px;
+	display: inline-block;
+	border-radius: 20px;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-left: 0;
+	box-shadow: 1px 4px 20px #bababa;
+}
+
+#cv a:hover {
+	background-color: #fff;
+	color: tomato;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+	
+}
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+	margin: 50px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.sidebar {
+    flex: 30%;
+	margin-top: 23px;
+    padding: 20px 20px 20px 20px;
+	background-color: #eee;
+}
+
+.sidebar h2 {
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 18px;
+	padding-bottom: 15px;
+}
+
+.sidebar p {
+	color: tomato;
+	font-size: 14px;
+	line-height: 19px;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid gray;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: #000;
+}
+
+.content h1 {
+	font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 28px;
+	padding-bottom: 5px;
+}
+	
+
+.content h2 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 16px;
+	padding-bottom: 5px;
+	color: dimgray;
+}
+
+.content h4 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 14px;
+	font-weight: lighter;
+	padding-bottom: 15px;
+}
+
+
+.content li {
+	font-size: 14px;
+	padding-bottom: 5px;
+	color: dimgray;
+}
+
+.content p {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 19px;
+	color: dimgray;
+	margin-right: 5%;
+}
+
+/* Main column content */
+.content {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.content img {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+}
+
+.content2 {
+    flex: 33%;
+    background-color: tomato;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.content2 h1 {
+	font-family: 'Bitter', serif;
+	color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+	padding-bottom: 5px;
+}
+
+.content2 h2 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 16px;
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+.content2 h4 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 14px;
+	font-weight: lighter;
+	padding-bottom: 15px;
+	color: #fff;
+}
+
+.content2 p {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 19px;
+	color: #fff;
+	margin-right: 5%;
+}
+	
+.content2 li {
+	font-size: 14px;
+	padding-bottom: 5px;
+	color: #fff;
+}
+	
+.content2 a {
+	text-decoration:underline #fff;
+}
+
+.content3 {
+	flex: 33%;
+    padding: 20px 20px 20px 20px;
+}
+	
+.content3 h1 {
+	font-family: 'Bitter', serif;
+	color: dimgray;
+    font-weight: 700;
+    font-size: 25px;
+	padding-bottom: 5px;
+}
+
+.content3 h2 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 16px;
+	padding-bottom: 5px;
+	color: dimgray;
+}
+
+.content3 h4 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 14px;
+	font-weight: lighter;
+	padding-bottom: 15px;
+	color: dimgray;
+}
+
+.content3 p {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 19px;
+	color: dimgray;
+	margin-right: 5%;
+}
+
+.content3 img {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+}
+	
+.content3 a {
+	line-height: 25px;
+	background-color: tomato;
+	padding: 2px 20px;
+	display: inline-block;
+	border-radius: 20px;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	box-shadow: 1px 4px 20px #bababa;
+}
+.content3 a:hover {
+	background-color: #fff;
+	color: tomato;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+	
+.sidebar img {
+	width: 100%;
+    padding: 0px 0px 6px 0px;
+	
+}
+	
+footer {
+	display: flex;
+	padding: 20px 50px 20px 50px;
+	text-align: left;
+}
+}
+
+
+
+
+
+
+@media (min-width:1025px) and (max-width:2200px) {
+
+nav {
+	width: 90%;
+	margin: -70px;
+		
+	}
+	
+.nav {
+	height: 70px;
+	line-height: 70px;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+  
+}
+
+.menu {
+	
+  margin:0;
+	padding: 0;
+	display: inline-block;
+	text-align: right;
+	background:none;
+}
+
+.menu a {
+	
+  text-decoration: none;
+	color: dimgray;
+	margin: 0px;
+	line-height: 0px;
+	display: inline-block;
+	border-bottom: none;
+	padding: 
+}
+
+
+label {
+	display: none;
+}
+	
+.box {
+	background-color: tomato;
+	border-radius: 20px;
+	box-shadow: 1px 4px 20px #bababa;
+	color: #fff;
+		
+	}
+	
+.box:hover {
+	background-color: #fff;
+	color: tomato;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+	}
+
+
+header {
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 100px;
+}
+
+/* SNIPPET: https://www.cssscript.com/css-only-crossfading-background-slideshow/ */
+.crossfade > figure {
+	  animation: imageAnimation 15s linear infinite 0s;
+	  backface-visibility: hidden;
+	  background-size: cover;
+	  background-position: center bottom;
+	  color: transparent;
+	  height: 100%;
+	  left: 0px;
+	  opacity: 0;
+	  position: absolute;
+	  top: 0px;
+	  width: 100%;
+	  z-index: -1;
+
+	}
+
+.crossfade > figure:nth-child(1) { 
+	background-image: url(../images/fischer.jpg); 
+	}
+	 
+
+	.crossfade > figure:nth-child(2) {
+	  animation-delay: 6s;
+	  background-image: url('../images/agriculture.jpg');
+	}
+
+	 
+	.crossfade > figure:nth-child(3) {
+	  animation-delay: 12s;
+	  background-image: url('../images/bagan.jpg');
+	}
+
+.crossfade > figure:nth-child(4) {
+	  animation-delay: 18s;
+	  background-image: url('../images/fischer.jpg');
+	}
+
+	 
+	.crossfade > figure:nth-child(5) {
+	  animation-delay: 24s;
+	  background-image: url('../images/agriculture.jpg');
+	}
+
+@keyframes
+	imageAnimation {  0% {
+	 animation-timing-function: ease-in;
+	 opacity: 0;
+
+	}
+	 8% {
+	 animation-timing-function: ease-out;
+	 opacity: 1;
+	}
+	 17% {
+	 opacity: 1
+	}
+	 25% {
+	 opacity: 0
+	}
+	 100% {
+	 opacity: 0
+
+	}
+	}
+
+/* SNIPPET SLUT */
+
+
+header, img {
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 80px;
+	max-height: 68%;
+
+}
+
+header h1 {
+	font-family: 'Bitter', serif;
+    line-height: 130px;
+    font-weight: 700;
+    font-size: 90px;
+    color: #fff;
+	word-wrap: break-word;
+	padding-top: 10%;
+	margin-left: 100px;
+	text-shadow: 1px 4px 15px #bababa;
+	width: 600px;
+}
+
+header h2 {
+	font-family: 'Bitter', serif;
+    line-height: 60px;
+    font-size: 50px;
+    color: #fff;
+	word-wrap: break-word;
+	margin-left: 100px;
+	text-shadow: 1px 4px 15px #bababa;
+	width: 650px;
+	
+}
+
+#cv a {
+	line-height: 25px;
+	background-color: tomato;
+	padding: 5px 30px;
+	display: inline-block;
+	border-radius: 20px;
+	font-size: 17px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-left: 100px;
+	box-shadow: 1px 4px 20px #bababa;
+}
+
+#cv a:hover {
+	background-color: #fff;
+	color: tomato;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+	
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+	margin-right: 160px;
+	margin-left: 160px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.sidebar {
+    flex: 20%;
+    padding: 20px 20px 20px 20px;
+	margin-top: 23px;
+
+}
+
+.sidebar h2 {
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 18px;
+	padding-bottom: 15px;
+}
+
+.sidebar h4 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 14px;
+	padding-bottom: 14px;
+}
+
+.sidebar p {
+	color: tomato;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.content h1 {
+	font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 28px;
+	padding-bottom: 5px;
+}
+
+.content h2 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 16px;
+	padding-bottom: 5px;
+	color: dimgray;
+}
+
+.content h4 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 14px;
+	font-weight: lighter;
+	padding-bottom: 15px;
+}
+
+
+.content li {
+	font-size: 14px;
+	padding-bottom: 5px;
+	color: dimgray;
+}
+
+.content p {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 19px;
+	color: dimgray;
+	margin-right: 5%;
+}
+
+/* Main column content */
+.content {
+    flex: 70%;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+}
+	
+.content2 {
+    flex: 33%;
+    background-color: tomato;
+    padding: 30px 20px 60px 20px;
+}
+	
+.content2 h1 {
+	font-family: 'Bitter', serif;
+	color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+	padding-bottom: 5px;
+}
+
+.content2 h2 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 16px;
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+.content2 h4 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 14px;
+	font-weight: lighter;
+	padding-bottom: 15px;
+	color: #fff;
+}
+
+.content2 p {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+	font-size: 14px;
+	line-height: 19px;
+	color: #fff;
+	margin-right: 5%;
+
+}
+	
+.content2 li {
+	font-size: 14px;
+	padding-bottom: 5px;
+	color: #fff;
+}
+	
+.content2 a {
+	text-decoration:underline #fff;
+}
+	
+.content3 {
+    flex: 33%;
+    background-color: white;
+    padding: 30px 20px 60px 20px;
+}
+	
+.content3 h1 {
+	font-family: 'Bitter', serif;
+	color: dimgray;
+    font-weight: 700;
+    font-size: 25px;
+	padding-bottom: 5px;
+}
+	
+.content3 a {
+	text-align: auto;
+	width: auto;
+}
+
+.content img {
+    width: 100%;
+    padding: 0px 0px 40px 0px;
+}
+
+.sidebar img {
+	width: 100%;
+    padding: 0px 0px 6px 0px;
+	
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: #000;
+}
+
+footer {
+	display: flex;
+	padding: 20px 160px 20px 160px;
+	text-align: left;
+}
+}
