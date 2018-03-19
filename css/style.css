@@ -128,7 +128,7 @@ header {
 @keyframes
 	imageAnimation {  0% {
 	 animation-timing-function: ease-in;
-	 opacity: 0%;
+	 opacity: 0;
 
 	}
 	 8% {
@@ -887,7 +887,6 @@ nav {
 	line-height: 0px;
 	display: inline-block;
 	border-bottom: none;
-	padding: 
 }
 
 
@@ -1189,7 +1188,7 @@ header h2 {
 	
 .content3 a {
 	text-align: auto;
-	width: auto;
+	width: inherit;
 }
 
 .content img {
